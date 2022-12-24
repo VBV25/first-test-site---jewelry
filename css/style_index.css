@@ -1,0 +1,253 @@
+/*цвета
+C39B51-gold
+
+*/
+
+@font-face {
+    font-family: 'Gotu';
+    src: url('../fonts/Gotu-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'CormorantInfant-Bold';
+    src: url('../fonts/CormorantInfant-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'CormorantInfant-Regular';
+    src: url('../fonts/CormorantInfant-Regular.ttf');
+}
+
+
+/*--------------* общие стили*------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gotu', 'CormorantInfant-Bold', 'CormorantInfant-Regular', 'Monaco', 'Lucida Console', Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*--------------*---------*------------------*/
+
+
+/*--------------*стиль всей секции и фон*------------------*/
+
+.page {
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background: black;
+    background-image: url('../img/phone.jpeg');
+    background-repeat: no-repeat;
+    background-position: top 0 center;
+    background-size: auto 100%;
+}
+
+
+/*--------------*---------*------------------*/
+
+
+/*--------------*wrapper--обертки*------------------*/
+
+.wrapper {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.wrapper_button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 100vh;
+    padding-top: 40vh;
+    align-items: center;
+}
+
+.img_wrapper {
+    box-sizing: border-box;
+    width: 50vw;
+    height: 100vh;
+}
+
+
+/*--------------*---------*------------------*/
+
+
+/*--------------*logo*------------------*/
+
+img.logo {
+    position: relative;
+    top: 0vh;
+    left: 3.5vw;
+    width: 90%;
+    height: 90%;
+    display: block;
+    z-index: 6;
+}
+
+
+/*--------------*---------*------------------*/
+
+
+/*--------------*button*------------------*/
+
+.silver_button,
+.gold_button {
+    z-index: 10;
+    display: flex;
+    height: max-content;
+    width: max-content;
+    padding: 1vw;
+    justify-content: center;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 7vh;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background: #020202;
+    border: 1vh solid #928d8a;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transition-duration: 2s;
+}
+
+.gold_button {
+    border: 1vh solid #c39b51 !important;
+}
+
+
+/*--------------*---------*------------------*/
+
+
+/*--------------*hover наведения*------------------*/
+
+.silver_button:hover,
+.silver_button:active {
+    cursor: pointer;
+    background-color: #2a2a2a;
+    color: #3f8893;
+    font-weight: bold;
+    border-color: #bcbcbc;
+    box-shadow: 0 0 30px 1px #7debfcb1;
+    border: 1vh solid;
+    transform: scale(1.1);
+    transition-duration: 0.7s;
+}
+
+.gold_button:hover,
+.gold_button:active {
+    cursor: pointer;
+    border: 1vh solid;
+    background-color: #363636;
+    color: #7c5925;
+    font-weight: bold;
+    border-color: #ce8d2a;
+    transform: scale(1.1);
+    transition-duration: 0.7s;
+    box-shadow: 0 0 30px 1px #7c5925;
+}
+
+*:active {
+    transition-duration: 0.1s !important;
+}
+
+
+/*--------------*button img*------------------*/
+
+.pendant_silwer {
+    height: 26vh;
+    width: 24vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    opacity: 0.82;
+}
+
+.pendant_gold {
+    height: 25vh;
+    width: 18vh !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    opacity: 0.85;
+}
+
+
+/*--------------*---------*------------------*/
+
+
+/*--------------*media*------------------*/
+
+@media (max-width: 1230px) {
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 'logo logo''btn_1 btn_2';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 75vh 25vh;
+    }
+    #img_wrapper {
+        grid-area: logo;
+    }
+    #btn_1 {
+        grid-area: btn_1;
+    }
+    #btn_2 {
+        grid-area: btn_2;
+    }
+    /*style--*/
+    .img_wrapper {
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100%;
+    }
+    .wrapper_button {
+        width: 100%;
+        height: 100%;
+        padding-top: 0vh;
+    }
+    img.logo {
+        left: 4%;
+        width: 95%;
+        height: 93%;
+    }
+    .silver_button,
+    .gold_button {
+        height: max-content;
+        width: max-content;
+        padding: 1vw 5vw;
+        font-size: 4vw;
+        line-height: 5vh;
+        border-radius: 30px;
+        margin-bottom: 5vh;
+        margin-top: -1vh;
+    }
+    .wrapper_button img {
+        display: none;
+    }
+}
+
+
+/*--------------*---------*------------------*/

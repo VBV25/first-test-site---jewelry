@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style_gold.css" />
+    <link rel="shortcut icon" href="img/favicon.svg" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Imperial Home</title>
+</head>
+
+<body class="wrapper">
+    <div class="bg_sect"></div>
+    <section class="panel_header">
+        <header class="header">
+            <a href="index.html" class="logo">
+                <img src="img/mini label text.svg" alt="logo_text" class="mini_logo_text" />
+                <img src="img/mini_label_home.svg" alt="logo_home" class="mini_logo_home" />
+            </a>
+            <!--mobile-->
+
+            <input type="checkbox" id="header_menu_nav_mobile" name="categories" />
+            <!-- value="menu nav"-->
+            <label for="header_menu_nav_mobile" id="header_menu_nav_tab" class="header_menu_nav_mobile">menu</label
+        >
+
+        <!---->
+        <ul class="menu_header">
+          <li><p class="active_menu">GOLD PAGE</p></li>
+          <li><a href="catalog_gold.html">GOLD CATALOG</a></li>
+          <li><a href="page_silver_index.html">SILVER PAGE</a></li>
+          <li><a href="#">CONTACTS</a></li>
+        </ul>
+        <a href="#section_form" class="call_header">ORDER A CALL</a>
+        <!--mobile nav-->
+
+        <ul class="menu_header_mobile">
+          <li><p class="active_menu">GOLD PAGE</p></li>
+          <li><a href="catalog_gold.html">GOLD CATALOG</a></li>
+          <li><a href="page_silver_index.html">SILVER PAGE</a></li>
+          <li><a href="#">CONTACTS</a></li>
+        </ul>
+
+        <!---->
+      </header>
+    </section>
+
+    <main>
+      <!-----section 1---->
+      <section class="section_1">
+        <!--<div class="section_1_wrapper">-->
+        <img src="img/logo_first.svg" alt="LOGO" class="big_logo" />
+        <p class="slogan">
+          Start your <br />
+          jewelry <br />
+          revolution
+        </p>
+      </section>
+      <!---->
+
+      <!--line-->
+      <div class="line_wrapper"></div>
+      <!--line-->
+
+      <!-----section 2---->
+      <section class="section_2">
+        <div class="section_2_wrapper">
+          <div class="advantages">
+            <h2>quality</h2>
+            <p>
+              The quality of our products is at the <br />
+              highest level. Each stone is securely <br />
+              fixed and all products are carefully <br />
+              checked for wear resistance.
+            </p>
+          </div>
+          <div class="advantages">
+            <h2>service</h2>
+            <p>
+              Our masters will come to any point <br />
+              of the city at a convenient time for <br />
+              you. They will help you choose the <br />
+              right materials for you and develop <br />
+              an individual design.
+            </p>
+          </div>
+        </div>
+        <div class="section_2_wrapper adv_2_wrp">
+          <div class="advantages">
+            <h2>exclusivity</h2>
+            <p>
+              All products are made by hand <br />
+              according to specially designed <br />
+              sketches. The finest work of the <br />
+              masters turns every detail of the <br />
+              decoration into a masterpiece. By <br />
+              purchasing from us, you acquire <br />
+              uniqueness.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!---->
+
+      <!--line-->
+      <div class="line_wrapper"></div>
+      <!--line-->
+
+      <!-----section 3---->
+      <section class="section_3">
+        <div class="section_3_wrapper">
+          <div class="materials">
+            <img class="materials_img_1" src="img/krystal.jpg" alt="krystal" />
+            <p>
+              we use only real gems. each of <br />
+              them is thoroughly checked and <br />
+              processed. here you can choose <br />
+              what you like and emphasize your <br />
+              elegance and individuality as <br />
+              much as possible
+            </p>
+          </div>
+          <div class="materials mater_2">
+            <img class="materials_img_2" src="img/gold1.jpg" alt="krystal" />
+            <p>
+              precious metals are used of the <br />
+              highest quality. it is possible to <br />
+              combine several materials in one <br />
+              product
+            </p>
+          </div>
+        </div>
+      </section>
+      <!---->
+
+      <!--line-->
+      <div class="line_wrapper"></div>
+      <!--line-->
+
+      <!-----section panel price---->
+      <section class="panel" id="catalog">
+        <div class="panel_wrapper" id="gold_stocks">
+          <h2>promotional items</h2>
+          <!-----------------button-catalog---------------------------->
+          <input
+            type="radio"
+            id="rings"
+            checked
+            name="categories"
+            value="rings"
+          />
+          <input
+            type="radio"
+            id="earrings"
+            name="categories"
+            value="earrings"
+          />
+          <input
+            type="radio"
+            id="pendants"
+            name="categories"
+            value="pendants"
+          />
+          <input type="radio" id="kits" name="categories" value="kits" />
+
+          <div class="categories">
+            <form id="catalog_filter">
+              <ul id="categories_container">
+                <div class="btn_catalog_filter">
+                  <li>
+                    <label
+                      for="rings"
+                      id="rings_tab"
+                      class="text_upper btn_hover"
+                    >
+                      rings</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      for="earrings"
+                      id="earrings_tab"
+                      class="text_upper btn_hover"
+                      >earrings</label
+                    >
+                  </li>
+                </div>
+                <div class="btn_catalog_filter">
+                  <li>
+                    <label
+                      for="pendants"
+                      id="pendants_tab"
+                      class="text_upper btn_hover"
+                      >pendants</label
+                    >
+                  </li>
+                  <li>
+                    <label for="kits" id="kits_tab" class="text_upper btn_hover"
+                      >kits</label
+                    >
+                  </li>
+                </div>
+              </ul>
+            </form>
+          </div>
+          <!------------------------------------------------------>
+          <!--cards-->
+          <!--rings-->
+          <div class="panels">
+            <div id="rings_container" class="catalog_container rings">
+              <div class="c_card_group">
+                <!-- 1 карточка- кольцо-->
+                <div class="c_card">
+                  
+                    <img src="img/gold_ring1.jpg" alt="card-image" />
+                    <div class="card_body">
+                      <h5>PRICE: 17 000$</h5>
+                      <h4>stock:</h4>
+                      <p class="price">16 500$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+
+                <!--карточки товаров-кольца-- 2-->
+                <div class="c_card">
+                 
+                    <img src="img/gold_ring2.jpg" alt="card-image" />
+                    <div class="card_body">
+                      <h5>PRICE: 15 000$</h5>
+                      <h4>stock:</h4>
+                      <p class="price">14 000$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+              </div>
+              <div class="c_card_group">
+                <!--карточки товаров--кольца- 3-->
+                <div class="c_card">
+                 
+                    <img src="img/gold_ring3.jpg " alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 45 000$</h5>
+                      <h4>stock:</h4>
+                      <p class="price">43 700$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+                <!--карточки товаров--кольца- 4-->
+                <div class="c_card">
+                  
+                    <img src="img/gold_ring4.jpg " alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 35 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">32 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!--серьги-->
+            <div id="earrings_container" class="catalog_container earrings">
+              <div class="c_card_group">
+                <!--карточки товаров--серьги- 1-->
+                <div class="c_card">
+                 
+                    <img src="img/gold_erring_1.jpg " alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 14 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">11 100$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+                <!--карточки товаров--серьги- 2-->
+                <div class="c_card">
+                 
+                    <img src="img/gold_erring_2.jpg " alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 27 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">25 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+              </div>
+              <div class="c_card_group">
+                <!--карточки товаров--серьги- 3-->
+                <div class="c_card">
+                 
+                    <img src="img/gold_erring_3.jpg" alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 15 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">12 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+
+                <!--карточки товаров--серьги- 4-->
+                <div class="c_card">
+                  
+                    <img src="img/gold_erring_4.jpg " alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 25 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">22 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <!--подвески-->
+            <div id="pendants_container" class="catalog_container pendants">
+              <div class="c_card_group">
+                <!--карточки товаров--подвески- 1-->
+                <div class="c_card">
+                  
+                    <img src="img/gold_pendants_1.jpg " alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 35 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">32 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+                <!--карточки товаров--подвески- 2-->
+                <div class="c_card">
+                  
+                    <img src="img/gold_pendants_2.jpg " alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 35 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">32 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                  
+                </div>
+              </div>
+              <div class="c_card_group">
+                <!--карточки товаров--подвески- 3-->
+                <div class="c_card">
+                  
+                    <img src="img/gold_pendants_3.jpg" alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 35 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">32 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+
+                <!--карточки товаров--подвески- 4-->
+                <div class="c_card">
+                 
+                    <img src="img/gold_pendants_4.jpg" alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 35 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">32 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <!--комплекты-->
+            <div id="kits_container" class="catalog_container kits">
+              <div class="c_card_group">
+                <!--карточки товаров--комплекты- 1-->
+                <div class="c_card">
+                  
+                    <img src="img/gold_kit_1.jpg" alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 35 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">32 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+                <!--карточки товаров--комплекты- 2-->
+                <div class="c_card">
+                  
+                    <img src="img/gold_kit_2.jpg" alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 35 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">32 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+              </div>
+              <div class="c_card_group">
+                <!--карточки товаров--комплекты- 3-->
+                <div class="c_card">
+                 
+                    <img src="img/gold_kit_3.jpg" alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 35 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">32 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+                <!--карточки товаров--комплекты- 4-->
+                <div class="c_card">
+                
+                    <img src="img/gold_kit_4.jpg " alt="card_image" />
+                    <div class="card_body">
+                      <h5>PRICE: 35 000$</h5>
+
+                      <h4>stock:</h4>
+                      <p class="price">32 600$</p>
+                      <a class="btn_card btn_hover">info</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---->
+
+        <a class="btn_go_catalog btn_hover" href="catalog_gold.html"
+          >go to the jewelry catalog
+        </a>
+      </section>
+      <!--line-->
+      <div class="line_wrapper"></div>
+      <!--line-->
+      <section class="section_form" id="section_form">
+        <div class="section_form_wrapper">
+          <h2>order a call</h2>
+          <form id="form_order" class="form_order">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              class="input_order"
+            />
+            <input 
+              type="text"
+              name="email"
+              id="email"
+              placeholder="email@email.ru"
+              class="input_order"
+            />
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="+7(999)999-99-99"
+              class="input_order"
+            />
+            <div id="messageShow"></div>
+            <button
+              type="button"
+              name="btn_form_order"
+              id="btn_form_order"
+              class="btn_form_order btn_hover"
+            >
+              to send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <section class="footer_wrapper">
+        <div class="footer_info">
+          <h2>to buyers</h2>
+
+          <p class="active_menu"> gold page</a>
+          
+          <a href="catalog_gold.html"> gold catalog</a>
+          <a href="page_silver_index.html"> silver page</a>
+          <a href="catalog_silver.html"> silver catalog</a>
+          <a href="#gold_stocks"> stocks</a>
+          <a href="#"> contacts</a>
+        </div>
+        <div class="footer_logo_wrapper">
+          <img class="footer_logo" src="img/logo_big.svg" alt="logo" />
+          <a href="https://vk.com/vbv252" target="_blank"  class="copyright_mobile">Copyright © 2022 ih_vbv25</a>
+        </div>
+        <div class="footer_info">
+          <h2>contacts</h2>
+
+          <p>phone</p>
+          <p>+7 (111) 222-33-44</p>
+          <p>address</p>
+          <p>Voronezh, 45 street. building 25</p>
+
+          <div class="icon_footer_wrapper">
+            <a href="#"
+              ><img class="icon_footer" src="img/facebook-f.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img class="icon_footer" src="img/instagram.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img class="icon_footer" src="img/twitter.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <!--MOBILE FOOTER-->
+      <section class="footer_wrapper_mobile">
+        <div class="footer_logo_wrapper_mobile">
+          <img class="footer_logo_mobile" src="img/logo_big.svg" alt="logo" />
+        </div>
+        <h2>to buyers</h2>
+        <div class="footer_info_mobile">
+          <p class="active_menu">gold page</p>
+          
+          <a href="catalog_gold.html"> gold catalog</a>
+          <a href="page_silver_index.html"> silver page</a>
+          <a href="catalog_silver.html"> silver catalog</a>
+          <a href="#gold_stocks"> stocks</a>
+          <a href="#"> contacts</a>
+        </div>
+        <div class="icon_footer_wrapper_mobile">
+          <a href="#"
+            ><img class="icon_footer" src="img/facebook-f.svg" alt=""
+          /></a>
+          <a href="#"
+            ><img class="icon_footer" src="img/instagram.svg" alt=""
+          /></a>
+          <a href="#"
+            ><img class="icon_footer" src="img/twitter.svg" alt=""
+          /></a>
+        </div>
+        <h2>contacts</h2>
+        <div class="footer_info_mobile">
+          <p>phone:+7 (111) 222-33-44</p>
+
+          <p>address:Voronezh, 45 street. building 25</p>
+        </div>
+
+        <a href="https://vk.com/vbv252"  target="_blank"  class="copyright_mobile">Copyright © 2022 ih_vbv25</a>
+      </section>
+    </footer>
+    <!--кнопк прокрутки-->
+    <div id="back-top">
+      <a href="#top"><div class="up_btn"></div> </a>
+    </div>
+  </body>
+</html>
