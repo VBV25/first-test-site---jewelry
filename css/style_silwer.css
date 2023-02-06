@@ -30,6 +30,10 @@ gold B17D2F B17D2F
     padding: 0;
 }
 
+p {
+    line-height: 3vw !important;
+}
+
 .wrapper {
     background-image: url('../img/silk_bg.jpg');
     background-repeat: no-repeat;
@@ -40,7 +44,7 @@ body {
     width: 100%;
     z-index: -5;
     margin: 0;
-    padding: 0 4vw;
+    /*padding: 0 4vw;*/
     box-sizing: border-box;
     font-family: 'Gotu', 'CormorantInfant-Bold', 'CormorantInfant-Regular', 'Monaco', 'Lucida Console', Helvetica, sans-serif;
     font-weight: 400;
@@ -54,7 +58,7 @@ body {
     z-index: -1;
     position: fixed;
     top: 0;
-    width: 93%;
+    width: 100%;
     height: 100vh;
     background-image: url('../img/bg_silver_2.jpg');
     background-repeat: no-repeat;
@@ -189,7 +193,8 @@ section.panel_header {
 /*---line---*/
 
 .line_wrapper {
-    z-index: 220;
+    z-index: 50;
+    position: relative;
     display: block;
     height: 0.7vw;
     width: 100%;
@@ -263,7 +268,7 @@ section.panel_header {
 .section_3_wrapper {
     box-sizing: border-box;
     margin: 70vw auto 0;
-    padding-bottom: 2vw;
+    padding-bottom: 50px;
     width: 100%;
     height: max-content;
     display: inline-flex;
@@ -303,7 +308,7 @@ section.panel_header {
 
 .panel {
     box-sizing: border-box;
-    padding-bottom: 2vw;
+    padding: 30px 0;
     width: 100%;
     height: max-content;
     box-shadow: 0 0 30px 2px #928d8a97 inset;
@@ -319,87 +324,19 @@ section.panel_header {
 }
 
 .panel_wrapper h2 {
-    margin: 2vw auto 1vw;
+    margin: 50px auto 70px;
     display: block;
     width: max-content;
     font-weight: 400;
-    font-size: 4vw;
-    line-height: 5vw;
+    font-size: 6vw;
+    line-height: 6vw;
     text-align: center;
     text-transform: uppercase;
+    text-shadow: -0 -1px 0 #000000, 0 -1px 0 #000000, -0 1px 0 #000000, 0 1px 0 #000000, -1px -0 0 #000000, 1px -0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, /**/
+    -0 -3px 1px rgba(82, 157, 170, 0.25), 0 -3px 1px rgba(82, 157, 170, 0.25), -0 3px 1px rgba(82, 157, 170, 0.25), 0 3px 1px rgba(82, 157, 170, 0.25), -3px -0 1px rgba(82, 157, 170, 0.25), 3px -0 1px rgba(82, 157, 170, 0.25), -3px 0 1px rgba(82, 157, 170, 0.25), 3px 0 1px rgba(82, 157, 170, 0.25), -1px -3px 1px rgba(82, 157, 170, 0.25), 1px -3px 1px rgba(82, 157, 170, 0.25), -1px 3px 1px rgba(82, 157, 170, 0.25), 1px 3px 1px rgba(82, 157, 170, 0.25), -3px -1px 1px rgba(82, 157, 170, 0.25), 3px -1px 1px rgba(82, 157, 170, 0.25), -3px 1px 1px rgba(82, 157, 170, 0.25), 3px 1px 1px rgba(82, 157, 170, 0.25), -2px -3px 1px rgba(82, 157, 170, 0.25), 2px -3px 1px rgba(82, 157, 170, 0.25), -2px 3px 1px rgba(82, 157, 170, 0.25), 2px 3px 1px rgba(82, 157, 170, 0.25), -3px -2px 1px rgba(82, 157, 170, 0.25), 3px -2px 1px rgba(82, 157, 170, 0.25), -3px 2px 1px rgba(82, 157, 170, 0.25), 3px 2px 1px rgba(82, 157, 170, 0.25), -3px -3px 1px rgba(82, 157, 170, 0.25), 3px -3px 1px rgba(82, 157, 170, 0.25), -3px 3px 1px rgba(82, 157, 170, 0.25), 3px 3px 1px rgba(82, 157, 170, 0.25), -3px -3px 1px rgba(82, 157, 170, 0.25), 3px -3px 1px rgba(82, 157, 170, 0.25), -3px 3px 1px rgba(82, 157, 170, 0.25), 3px 3px 1px rgba(82, 157, 170, 0.25);
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 80px 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-}
-
-.categories {
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.categories ul {
-    box-sizing: border-box;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style-type: none;
-    font-size: 2.4vw;
-}
-
-.btn_catalog_filter {
-    box-sizing: border-box;
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.categories li {
-    box-sizing: border-box;
-    margin: 1vw auto 2vw;
-    height: max-content;
-    width: 17vw;
-    text-align: center;
-}
-
-.categories li label {
-    box-sizing: border-box;
-    display: inline-flex;
-    justify-content: center;
-    width: 17vw;
-    height: 4vw;
-    align-items: center;
-    border-radius: 5vw;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: #000000;
-    border: solid 2px #928d8a;
-    transition: 0.5s ease-in-out;
-}
-
-.panel input[type='radio'] {
-    position: absolute;
-    opacity: 0;
-}
-
-
-/*---*/
-
-#rings:checked~.categories #rings_tab,
-#earrings:checked~.categories #earrings_tab,
-#pendants:checked~.categories #pendants_tab,
-#kits:checked~.categories #kits_tab {
-    color: #ffffff;
-    background-color: #9d9d9d8f;
-    border: solid 2px #ffffff;
-}
-
-#rings:checked~.panels .rings,
-#earrings:checked~.panels .earrings,
-#pendants:checked~.panels .pendants,
-#kits:checked~.panels .kits {
-    display: flex;
 }
 
 
@@ -411,7 +348,8 @@ section.panel_header {
 
 .catalog_container {
     box-sizing: border-box;
-    display: none;
+    display: flex;
+    padding-bottom: 30px;
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
@@ -428,6 +366,8 @@ section.panel_header {
 
 .c_card {
     margin: 1vw 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
     width: 190px;
     height: max-content;
     display: flex;
@@ -440,8 +380,7 @@ section.panel_header {
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0px 0px 50px 10px black;
     border-radius: 20px;
-    border: 10px solid black;
-    border-image: url('../img/border_silver.png') 30 stretch;
+    border: 2px solid rgba(116, 114, 112, 0.2);
 }
 
 .c_card img {
@@ -471,7 +410,7 @@ section.panel_header {
     font-size: 150%;
     margin: 5% auto;
     line-height: 100%;
-    color: rgba(28, 243, 28, 0.876);
+    color: #13a9c0;
 }
 
 .btn_card {
@@ -484,7 +423,7 @@ section.panel_header {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #000000;
-    border: solid 2px #928d8a;
+    border: solid 1px #928d8a;
 }
 
 .btn_go_catalog {
@@ -573,7 +512,7 @@ section.panel_header {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #000000;
-    border: 5px solid #928d8a;
+    border: 3px solid #928d8a;
     border-radius: 30px;
 }
 
@@ -879,6 +818,9 @@ footer a:active,
 /*-------media-------*/
 
 @media (max-width: 1024px) {
+    p {
+        line-height: 4vw !important;
+    }
     .header,
     .section_3 p {
         font-size: 2vw;
@@ -922,11 +864,11 @@ footer a:active,
     }
     /*card*/
     .c_card {
-        width: 25vw;
+        width: 35%;
     }
     .c_card img {
-        height: auto;
-        width: 100%;
+        height: 153px;
+        width: 90%;
         margin-bottom: 1vh;
     }
     .card_body h5 {
@@ -1046,7 +988,8 @@ footer a:active,
     }
     .panel_wrapper h2 {
         margin-top: 2vh;
-        font-size: 6vw;
+        margin-bottom: 20px;
+        font-size: 8vw;
     }
     .categories li {
         margin: 1vw 0 2vw;

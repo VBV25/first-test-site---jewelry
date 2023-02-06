@@ -343,7 +343,7 @@ section.panel_header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     column-gap: 5vw;
-    row-gap: 10vh;
+    row-gap: 40px;
     justify-content: center;
 }
 
@@ -1226,6 +1226,9 @@ footer a:active,
     /*--card--*/
     .catalog_container {
         padding: 0 4vw;
+    }
+    .group_nav_catalog_silver {
+        row-gap: 25px;
     }
 }
 
