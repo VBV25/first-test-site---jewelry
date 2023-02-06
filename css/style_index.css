@@ -24,6 +24,7 @@ C39B51-gold
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -48,8 +49,8 @@ a {
 .page {
     box-sizing: border-box;
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -10;
     background: black;
     background-image: url('../img/phone.jpeg');
@@ -67,25 +68,33 @@ a {
 .wrapper {
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
+    padding: 50px;
 }
 
 .wrapper_button {
-    box-sizing: border-box;
+    z-index: 100;
+    width: 100%;
+    padding: 0 100px;
+    height: max-content;
     display: flex;
-    flex-direction: column;
-    width: 25vw;
-    height: 100vh;
-    padding-top: 40vh;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .img_wrapper {
-    box-sizing: border-box;
-    width: 50vw;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 3%;
 }
 
 
@@ -95,13 +104,8 @@ a {
 /*--------------*logo*------------------*/
 
 img.logo {
-    position: relative;
-    top: 0vh;
-    left: 3.5vw;
-    width: 90%;
-    height: 90%;
-    display: block;
-    z-index: 6;
+    width: 800px;
+    height: auto;
 }
 
 
@@ -112,28 +116,26 @@ img.logo {
 
 .silver_button,
 .gold_button {
-    z-index: 10;
     display: flex;
-    height: max-content;
+    min-height: max-content !important;
     width: max-content;
-    padding: 1vw;
+    padding: 20px 30px;
     justify-content: center;
     color: white;
     font-style: normal;
     font-weight: 400;
-    font-size: 3vw;
-    line-height: 7vh;
+    font-size: 36px;
+    line-height: 44px;
     text-transform: uppercase;
-    box-sizing: border-box;
     background: #020202;
-    border: 1vh solid #928d8a;
+    border: 5px solid #928d8a;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
+    border-radius: 10%;
     transition-duration: 2s;
 }
 
 .gold_button {
-    border: 1vh solid #c39b51 !important;
+    border-color: #c39b51 !important;
 }
 
 
@@ -150,7 +152,7 @@ img.logo {
     font-weight: bold;
     border-color: #bcbcbc;
     box-shadow: 0 0 30px 1px #7debfcb1;
-    border: 1vh solid;
+    border: 5px solid;
     transform: scale(1.1);
     transition-duration: 0.7s;
 }
@@ -158,7 +160,7 @@ img.logo {
 .gold_button:hover,
 .gold_button:active {
     cursor: pointer;
-    border: 1vh solid;
+    border: 5px solid;
     background-color: #363636;
     color: #7c5925;
     font-weight: bold;
@@ -175,22 +177,22 @@ img.logo {
 
 /*--------------*button img*------------------*/
 
+.pendant_silwer,
+.pendant_gold {
+    display: block;
+    margin: auto;
+    border-radius: 20%;
+    opacity: 0.82;
+}
+
 .pendant_silwer {
     height: 26vh;
     width: 24vh;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20%;
-    opacity: 0.82;
 }
 
 .pendant_gold {
     height: 25vh;
     width: 18vh !important;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20%;
-    opacity: 0.85;
 }
 
 
@@ -199,53 +201,207 @@ img.logo {
 
 /*--------------*media*------------------*/
 
-@media (max-width: 1230px) {
-    .wrapper {
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        grid-template-areas: 'logo logo''btn_1 btn_2';
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 75vh 25vh;
-    }
-    #img_wrapper {
-        grid-area: logo;
-    }
-    #btn_1 {
-        grid-area: btn_1;
-    }
-    #btn_2 {
-        grid-area: btn_2;
-    }
-    /*style--*/
-    .img_wrapper {
-        box-sizing: border-box;
-        width: 100vw;
-        height: 100%;
-    }
+@media (max-width: 1400px) {
     .wrapper_button {
-        width: 100%;
-        height: 100%;
-        padding-top: 0vh;
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .wrapper_button {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .wrapper_button img {
+        display: none;
+    }
+}
+
+@media (max-width: 1030px) {
+    .wrapper {
+        padding: 200px 60px 50px;
+    }
+    .img_wrapper {
+        align-items: flex-start;
+        top: 20px;
     }
     img.logo {
-        left: 4%;
-        width: 95%;
-        height: 93%;
+        width: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        padding: 20px 50px 80px;
+    }
+    /*----*/
+    .img_wrapper {
+        top: 40px;
+    }
+    img.logo {
+        width: 600px;
+    }
+    /*--------------*button*------------------*/
+    .silver_button,
+    .gold_button {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        padding: 50px 30px 90px;
+    }
+    /*----*/
+    .img_wrapper {
+        top: 50px;
+    }
+    img.logo {
+        width: 500px;
+    }
+    /*--------------*button*------------------*/
+    .silver_button,
+    .gold_button {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        padding: 50px 10px;
+    }
+    /*----*/
+    .img_wrapper {
+        top: 20px;
+    }
+    img.logo {
+        width: 380px;
+    }
+    /*--------------*button*------------------*/
+    .button-conteiner {
+        margin: 50px auto 10px;
+    }
+}
+
+@media (max-width: 340px) {
+    .wrapper {
+        padding: 20px 10px 30px;
+    }
+    /*----*/
+    .img_wrapper {
+        top: 30px;
+    }
+    img.logo {
+        width: 370px;
+    }
+    /*--------------*button*------------------*/
+    .silver_button,
+    .gold_button {
+        padding: 5px 15px;
+        border: 3px solid;
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 245px) {
+    .wrapper {
+        padding: 10px;
+    }
+    /*----*/
+    .img_wrapper {
+        top: 10px;
+    }
+    img.logo {
+        width: 250px;
+    }
+    /*--------------*button*------------------*/
+    .button-conteiner {
+        margin: 50px auto 0px;
     }
     .silver_button,
     .gold_button {
-        height: max-content;
-        width: max-content;
-        padding: 1vw 5vw;
-        font-size: 4vw;
-        line-height: 5vh;
-        border-radius: 30px;
-        margin-bottom: 5vh;
-        margin-top: -1vh;
+        padding: 5px 15px;
+        border: 3px solid;
+        font-size: 12px;
+        line-height: 22px;
     }
-    .wrapper_button img {
-        display: none;
+}
+
+
+/*----------media HEIGHT---------*/
+
+@media (max-height: 540px) {
+    .wrapper {
+        padding: 50px 10px;
+    }
+    /*----*/
+    .img_wrapper {
+        top: 20px;
+    }
+    img.logo {
+        width: 450px;
+    }
+    /*--------------*button*------------------*/
+    .button-conteiner {
+        margin: 50px 30px 10px;
+    }
+    .silver_button,
+    .gold_button {
+        padding: 5px 15px;
+        font-size: 22px;
+        line-height: 36px;
+    }
+}
+
+@media (max-height: 450px) {
+    /*----*/
+    img.logo {
+        width: 380px;
+    }
+    /*--------------*button*------------------*/
+    .silver_button,
+    .gold_button {
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 340px) {
+    /*--------------*button*------------------*/
+    .button-conteiner {
+        margin: 50px 20px 10px !important;
+    }
+}
+
+@media (max-height: 320px) {
+    .wrapper {
+        padding: 10px;
+    }
+    /*----*/
+    .img_wrapper {
+        top: 10px;
+    }
+    img.logo {
+        width: 250px;
+    }
+    /*--------------*button*------------------*/
+    .button-conteiner {
+        margin: 50px auto 0px;
+    }
+    .silver_button,
+    .gold_button {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+@media (max-height: 250px) {
+    img.logo {
+        width: 150px;
     }
 }
 
