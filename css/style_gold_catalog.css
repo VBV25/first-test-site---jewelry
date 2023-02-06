@@ -303,11 +303,12 @@ gold B17D2F B17D2F
         }
         
         .panels {
-              /* border: 2px solid rgb(51, 0, 255);*/
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            width:75%;
+            /* border: 2px solid rgb(51, 0, 255);*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 75%;
+            margin-left: 20px;
             height: max-content;
         }
         /*--*/
@@ -334,7 +335,7 @@ gold B17D2F B17D2F
         /*--*/
         
         .catalog_container {
-             /* border: 2px solid rgb(0, 255, 30);*/
+            /* border: 2px solid rgb(0, 255, 30);*/
             display: none;
             width: 100%;
             height: max-content;
@@ -366,7 +367,7 @@ gold B17D2F B17D2F
             background-color: rgba(0, 0, 0, 0.9);
             box-shadow: 0px 0px 50px 10px black;
             border-radius: 10px;
-    border: 1px solid rgba(124, 89, 37, 0.6);
+            border: 1px solid rgba(124, 89, 37, 0.6);
         }
         
         .card_body h4 {
@@ -870,7 +871,7 @@ gold B17D2F B17D2F
                 padding: 7vh 1vw;
             }
             .categories h2 {
-               /* margin: 1.5vh 1vw 1.5vh;*/
+                /* margin: 1.5vh 1vw 1.5vh;*/
                 font-size: 2.4vw;
                 line-height: 3vh;
             }
@@ -890,8 +891,6 @@ gold B17D2F B17D2F
         }
         
         @media (max-width: 1024px) {
-            
-
             /*-------------*/
             .header {
                 font-size: 2vw;
@@ -915,7 +914,7 @@ gold B17D2F B17D2F
                 padding: 5vh 1vw;
             }
             .categories h2 {
-               /* margin: 4.5vh auto 2.5vh;*/
+                /* margin: 4.5vh auto 2.5vh;*/
             }
             .categories li label {
                 width: 80%;
@@ -959,9 +958,8 @@ gold B17D2F B17D2F
                 margin-left: 31%;
             }
         }
-     
+        
         @media (max-width: 700px) {
-            
             /*----------------*/
             /*--header*/
             .header {
@@ -1006,7 +1004,8 @@ gold B17D2F B17D2F
                 flex-direction: column;
             }
             .panels {
-                width:100%;
+                width: 100%;
+                margin-left: 0px;
             }
             .categories {
                 z-index: 110;
@@ -1192,8 +1191,8 @@ gold B17D2F B17D2F
         }
         
         @media (max-width: 550px) {
-            body{    padding: 0 2px;
-
+            body {
+                padding: 0 2px;
             }
             /*--header*/
             .header {

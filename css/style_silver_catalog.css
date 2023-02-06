@@ -28,7 +28,7 @@ gold B17D2F B17D2F
     margin: 0;
     padding: 0;
 }
-   
+
 .active_img {
     z-index: 200;
     top: 0;
@@ -314,7 +314,8 @@ section.panel_header {
     display: flex;
     justify-content: center;
     align-items: center;
-  width:75%;
+    width: 75%;
+    margin-left: 20px;
     height: max-content;
 }
 
@@ -374,7 +375,8 @@ section.panel_header {
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0px 0px 50px 10px black;
     border-radius: 10px;
-    border: 2px solid rgba(116, 114, 112, 0.6);}
+    border: 2px solid rgba(116, 114, 112, 0.6);
+}
 
 .card_body h4 {
     line-height: 1vh;
@@ -1044,7 +1046,8 @@ footer a:active,
         flex-direction: column;
     }
     .panels {
-        width:100%;
+        width: 100%;
+        margin-left: 0px;
     }
     .categories {
         z-index: 110;
@@ -1225,8 +1228,8 @@ footer a:active,
 }
 
 @media (max-width: 550px) {
-    body{    padding: 0 2px;
-
+    body {
+        padding: 0 2px;
     }
     /*--header*/
     .header {
