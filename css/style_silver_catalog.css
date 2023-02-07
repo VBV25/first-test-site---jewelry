@@ -590,7 +590,7 @@ section.panel_header {
     font-size: 2vw;
     font-weight: bold;
     background-color: #1c1c1c;
-    border: 5px solid #5d5d5d;
+    border: 2px solid #5d5d5d;
     border-radius: 1vw;
     transition: 0.3s;
 }

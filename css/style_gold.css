@@ -157,11 +157,10 @@ section.panel_header {
 
 .section_1 {
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    justify-content: end;
     width: 100%;
     height: max-content;
-    text-transform: uppercase;
-    text-align: end;
     background-color: #000000;
     background-image: url('../img/bg_gold_1.jpg');
     background-repeat: no-repeat;
@@ -169,16 +168,23 @@ section.panel_header {
     border: 1px solid rgb(0, 0, 0);
 }
 
+.section_1_wrapper {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8%;
+}
+
 .big_logo {
     display: inline-block;
-    margin: 3vw 4vw 1vw 46vw;
     width: 40vw;
 }
 
 .slogan {
     box-sizing: border-box;
     display: block;
-    margin: 0 0 3vw 59vw;
     padding: 1vw;
     width: max-content;
     font-size: 2vw;
