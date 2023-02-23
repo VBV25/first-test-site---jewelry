@@ -224,10 +224,12 @@ img.logo {
     .wrapper {
         padding: 200px 60px 50px;
     }
+
     .img_wrapper {
         align-items: flex-start;
         top: 20px;
     }
+
     img.logo {
         width: 600px;
     }
@@ -237,13 +239,16 @@ img.logo {
     .wrapper {
         padding: 20px 50px 80px;
     }
+
     /*----*/
     .img_wrapper {
         top: 40px;
     }
+
     img.logo {
         width: 600px;
     }
+
     /*--------------*button*------------------*/
     .silver_button,
     .gold_button {
@@ -256,13 +261,16 @@ img.logo {
     .wrapper {
         padding: 50px 30px 90px;
     }
+
     /*----*/
     .img_wrapper {
         top: 50px;
     }
+
     img.logo {
         width: 500px;
     }
+
     /*--------------*button*------------------*/
     .silver_button,
     .gold_button {
@@ -275,13 +283,16 @@ img.logo {
     .wrapper {
         padding: 50px 10px;
     }
+
     /*----*/
     .img_wrapper {
         top: 20px;
     }
+
     img.logo {
         width: 380px;
     }
+
     /*--------------*button*------------------*/
     .button-conteiner {
         margin: 50px auto 10px;
@@ -292,13 +303,16 @@ img.logo {
     .wrapper {
         padding: 20px 10px 30px;
     }
+
     /*----*/
     .img_wrapper {
         top: 30px;
     }
+
     img.logo {
         width: 370px;
     }
+
     /*--------------*button*------------------*/
     .silver_button,
     .gold_button {
@@ -313,17 +327,21 @@ img.logo {
     .wrapper {
         padding: 10px;
     }
+
     /*----*/
     .img_wrapper {
         top: 10px;
     }
+
     img.logo {
         width: 250px;
     }
+
     /*--------------*button*------------------*/
     .button-conteiner {
         margin: 50px auto 0px;
     }
+
     .silver_button,
     .gold_button {
         padding: 5px 15px;
@@ -340,17 +358,21 @@ img.logo {
     .wrapper {
         padding: 50px 10px;
     }
+
     /*----*/
     .img_wrapper {
         top: 20px;
     }
+
     img.logo {
         width: 450px;
     }
+
     /*--------------*button*------------------*/
     .button-conteiner {
         margin: 50px 30px 10px;
     }
+
     .silver_button,
     .gold_button {
         padding: 5px 15px;
@@ -360,10 +382,12 @@ img.logo {
 }
 
 @media (max-height: 450px) {
+
     /*----*/
     img.logo {
         width: 380px;
     }
+
     /*--------------*button*------------------*/
     .silver_button,
     .gold_button {
@@ -372,6 +396,7 @@ img.logo {
 }
 
 @media (max-height: 340px) {
+
     /*--------------*button*------------------*/
     .button-conteiner {
         margin: 50px 20px 10px !important;
@@ -382,17 +407,21 @@ img.logo {
     .wrapper {
         padding: 10px;
     }
+
     /*----*/
     .img_wrapper {
         top: 10px;
     }
+
     img.logo {
         width: 250px;
     }
+
     /*--------------*button*------------------*/
     .button-conteiner {
         margin: 50px auto 0px;
     }
+
     .silver_button,
     .gold_button {
         font-size: 12px;
