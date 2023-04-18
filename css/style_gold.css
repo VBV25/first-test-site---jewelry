@@ -180,11 +180,13 @@ section.panel_header {
 .big_logo {
     display: inline-block;
     width: 40vw;
+    margin: 0 !important;
 }
 
 .slogan {
     box-sizing: border-box;
     display: block;
+    margin: 0 !important;
     padding: 1vw;
     width: max-content;
     font-size: 2vw;
@@ -202,7 +204,7 @@ section.panel_header {
     height: 0.7vw;
     width: 100%;
     background: rgb(102, 72, 28);
-    background: linear-gradient( 180deg, rgba(102, 72, 28, 1) 0%, rgba(124, 85, 29, 0.9724264705882353) 50%, rgba(242, 192, 116, 1) 100%);
+    background: linear-gradient(180deg, rgba(102, 72, 28, 1) 0%, rgba(124, 85, 29, 0.9724264705882353) 50%, rgba(242, 192, 116, 1) 100%);
 }
 
 
